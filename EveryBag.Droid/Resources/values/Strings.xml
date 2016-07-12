@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="subtotal">SUBTOTAL</string>
+  <string name="shippingText">SHIPPING: </string>
+  <string name="promoDiscountText">50% PROMO DISCOUNT</string>
+  <string name="totalText">TOTAL</string>
+  <string name="checkout">GO TO CHECKOUT</string>
+  <string name="bagsText">Bags</string>
+  <string name="emailText">Your email</string>
+  <string name="passwordText">Your password</string>
+  <string name="forgotPasswordText">Forgot Password?</string>
+  <string name="LoginText">LOG IN</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/relative_layout">
+    <Mvx.MvxImageView
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:id="@+id/CartImage11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/image_layout"
+        local:MvxBind="ImageUrl CartImage1" />
+    <Mvx.MvxImageView
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:id="@+id/CartImage22"
+        android:layout_toRightOf="@id/CartImage11"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_layout"
+        local:MvxBind="ImageUrl CartImage2" />
+    <RelativeLayout
+        android:id="@+id/CartItemNameRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CartImage11"
+        android:background="@drawable/relative_layout_item">
+        <TextView
+            android:id="@+id/CartItemNameText"
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="Roboto"
+            android:textSize="40px"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            local:MvxBind="Text CartItemName" />
+        <TextView
+            android:id="@+id/CartItemUpdateText"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/CartItemNameText"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="Roboto"
+            android:textSize="28px"
+            android:textStyle="normal"
+            android:textColor="#b5b5b5"
+            local:MvxBind="Text CartUpdate" />
+        <TextView
+            android:id="@+id/CartItemsTotalText"
+            android:background="@drawable/edit_text_circle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/CartItemNameText"
+            android:fontFamily="Roboto"
+            android:textSize="25px"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            local:MvxBind="Text CartItemsTotal" />
+        <TextView
+            android:id="@+id/CartItemsPriceText"
+            android:background="@drawable/edit_text_circle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/CartItemsTotalText"
+            android:fontFamily="Roboto"
+            android:textSize="25px"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            local:MvxBind="Text CartItemsPrice" />
+    </RelativeLayout>
+</RelativeLayout>

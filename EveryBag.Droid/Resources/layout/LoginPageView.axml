@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/EveryBag.Droid"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/background">
+    <ImageView
+        android:src="@drawable/logo_with_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EveryBagLogo"
+        android:minWidth="150dp"
+        android:minHeight="150dp"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:text="@string/emailText"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailText"
+        android:textStyle="normal"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/EveryBagLogo" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_text_style"
+        android:height="40dp"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/EmailText"
+        android:width="50dp" />
+    <TextView
+        android:text="@string/passwordText"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PasswordText"
+        android:textStyle="normal"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/Username" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        android:height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_text_style"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:layout_below="@id/PasswordText" />
+    <Button
+        android:text="@string/forgotPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ForgotPasswordButton"
+        android:layout_below="@id/PasswordText"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:height="42dp"
+        android:width="150dp" />
+    <Button
+        android:text="@string/LoginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginInButton"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#b5b5b5"
+        android:textSize="20dp"
+        android:height="50dp"
+        android:textColor="#ffffffff"
+        android:enabled="false"
+        android:layout_below="@id/Password" />
+</RelativeLayout>

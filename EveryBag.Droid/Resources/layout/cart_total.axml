@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:id="@+id/InnerCartTotalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/relative_layout_cart_total">
+        <TextView
+            android:id="@+id/CartSubTotalText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/subtotal"
+            android:textColor="#757575"
+            android:fontFamily="Roboto"
+            android:textSize="36px" />
+        <TextView
+            android:id="@+id/CartSubTotalId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#757575"
+            android:fontFamily="Roboto"
+            android:textSize="48px"
+            local:MvxBind="Text CartSubTotal" />
+        <TextView
+            android:id="@+id/CartShippingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/CartSubTotalText"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/shippingText"
+            android:textColor="#757575"
+            android:fontFamily="Roboto"
+            android:textSize="36px" />
+        <TextView
+            android:id="@+id/CartShippingPlaceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CartSubTotalText"
+            android:layout_toRightOf="@id/CartShippingText"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="4dp"
+            local:MvxBind="Text ShippingPlace"
+            android:textColor="#3ea0cd"
+            android:fontFamily="Roboto"
+            android:textSize="36px" />
+        <TextView
+            android:id="@+id/ShippingCostId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CartSubTotalId"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#757575"
+            android:fontFamily="Roboto"
+            android:textSize="48px"
+            local:MvxBind="Text ShippingCost" />
+        <TextView
+            android:id="@+id/PromoDiscountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CartShippingText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#757575"
+            android:fontFamily="Roboto"
+            android:textSize="36px"
+            android:text="@string/promoDiscountText" />
+        <TextView
+            android:id="@+id/PromoDiscountId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ShippingCostId"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#757575"
+            android:fontFamily="Roboto"
+            android:textSize="48px"
+            local:MvxBind="Text PromoDiscount" />
+        <Mvx.MvxImageView
+            android:id="@+id/DottedLine"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_below="@id/PromoDiscountText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/dotted_line" />
+        <TextView
+            android:id="@+id/InclusiveTaxesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DottedLine"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:fontFamily="Roboto"
+            android:textSize="36px"
+            android:textColor="#b5b5b5"
+            local:MvxBind="Text IncTaxes" />
+        <TextView
+            android:id="@+id/TotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/InclusiveTaxesText"
+            android:layout_below="@id/DottedLine"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/totalText"
+            android:textColor="@android:color/black"
+            android:fontFamily="Roboto"
+            android:textSize="36px" />
+        <TextView
+            android:id="@+id/TotalAmountId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/InclusiveTaxesText"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="Roboto"
+            android:textSize="72px"
+            local:MvxBind="Text TotalAmount" />
+    </RelativeLayout>
+</RelativeLayout>

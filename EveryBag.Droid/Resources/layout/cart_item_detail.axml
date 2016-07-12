@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center"
+    android:background="@drawable/relativelayout_item_detail">
+    <Mvx.MvxImageView
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:id="@+id/CartDetailImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartDetailTitle"
+        android:layout_toRightOf="@id/CartDetailImage"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="38px"
+        android:fontFamily="Roboto" />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SoldByTitle"
+        android:layout_toRightOf="@id/CartDetailImage"
+        android:layout_below="@id/CartDetailTitle"
+        android:layout_marginLeft="10dp"
+        android:textColor="#b5b5b5"
+        android:textSize="38px"
+        android:fontFamily="Roboto" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SoldByName"
+        android:layout_toRightOf="@id/SoldByTitle"
+        android:layout_below="@id/CartDetailTitle"
+        android:textColor="#3ea0cd"
+        android:textSize="38px"
+        android:fontFamily="Roboto" />
+    <TextView
+        android:id="@+id/CartDetailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="38px"
+        android:fontFamily="Roboto" />
+</RelativeLayout>
